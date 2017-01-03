@@ -1,0 +1,112 @@
+<div class="intro">
+    <p>{{config.reportIntroParagraph}}</p>
+</div>
+<div class="results section-wrapper floatfix">
+    <h2>{{config.reportResultsTitle}}</h2>
+    <div class="section">
+        <h3>{{config.reportInputsLabel}}</h3>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>{{config.reportCompetitorLabel}}</td>
+                    <td>{{config.report3MLabel}}</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportProductNameLabel}}</td>
+                    <td>{{calculator[ calc.id ].competitorProduct}}</td>
+                    <td>{{calculator[ calc.id ].threeMProduct}}</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportTimeProcessLabel}}</td>
+                    <td>{{calculator[ calc.id ].competitorPartsPerHour | number : 0o}}</td>
+                    <td>{{calculator[ calc.id ].threeMPartsPerHour | number : 0}}</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportPartPerLabel}}</td>
+                    <td>{{calculator[ calc.id ].competitorPartsPerBelt | number : 0}}</td>
+                    <td>{{calculator[ calc.id ].threeMPartsPerBelt | number : 0}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section">
+        <h3 class="bold-header">{{config.reportTimeProcessLabel}}</h3>
+        <cn-chart chart-data="chartData1"></cn-chart>
+    </div>
+    <div class="section">
+        <h3 class="bold-header">{{config.reportPartPerLabel}}</h3>
+        <cn-chart chart-data="chartData2"></cn-chart>
+    </div>
+</div>
+<div class="annual-savings section-wrapper floatfix">
+    <h2>{{config.reportAnnualSavings}}</h2>
+    <div class="section">
+        <h3>{{config.reportInputsLabel}}</h3>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>{{config.reportCompetitorLabel}}</td>
+                    <td>{{config.report3MLabel}}</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportProductNameLabel}}</td>
+                    <td>{{calculator[ calc.id ].competitorProduct}}</td>
+                    <td>{{calculator[ calc.id ].threeMProduct}}</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportCostPerBelt}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].competitorCostPerBelt | number : 2}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].threeMCostPerBelt | number : 2}}</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportBurdenRate}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].competitorBurdenRatePerHour | number : 2}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].competitorBurdenRatePerHour | number : 2}}</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportChangeoverTime}}</td>
+                    <td>{{calculator[ calc.id ].competitorChangeOverTime | number : 0}}</td>
+                    <td>{{calculator[ calc.id ].competitorChangeOverTime | number : 0}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section">
+        <h3>{{config.reportResultsLabel}}</h3>
+        <div class="table-wrapper">
+            <table>
+                <tr>
+                    <td></td>
+                    <td>{{config.currency}}</td>
+                    <td>%</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportAbrasiveSavingsLabel}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].abrasiveSavingsAmount | number : 2}}</td>
+                    <td>{{calculator[ calc.id ].abrasiveSavingsPercent | number : 0}}%</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportChangeoverSavings}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].changeOverSavingsAmount.format(2)}}</td>
+                    <td>{{calculator[ calc.id ].changeOverSavingsPercent | number : 0}}%</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportLaborSavings}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].laborSavingsAmount.format(2)}}</td>
+                    <td>{{calculator[ calc.id ].laborSavingsPercent | number : 0}}%</td>
+                </tr>
+                <tr>
+                    <td>{{config.reportAnnualSavings}}</td>
+                    <td>{{config.currency}} + {{calculator[ calc.id ].annualSavingsAmount.format(2)}}</td>
+                    <td>{{calculator[ calc.id ].annualSavingsPercent | number : 0}}%</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="section">
+        <h3 class="bold-header">{{config.reportAnnualCost}}</h3>
+        <cn-chart chart-data="chartData3"></cn-chart>
+    </div>
+</div>

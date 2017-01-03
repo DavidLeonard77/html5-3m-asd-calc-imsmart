@@ -1,0 +1,49 @@
+<ion-side-menus enable-menu-with-back-views="true">
+    <ion-side-menu-content class="main-container">
+        <ion-nav-bar class="bar-stable">
+            <ion-nav-buttons side="left">
+                <button class="button button-icon button-clear ion-navicon" menu-toggle="left">
+                </button>
+            </ion-nav-buttons>
+
+            <ion-nav-buttons side="right">
+                <button class="button button-icon button-clear ion-ios-upload-outline button-positive"
+                        ng-hide="isStart()"
+                        ng-click="showCustomerInfoPopover($event)"></button>
+            </ion-nav-buttons>
+
+        </ion-nav-bar>
+        <ion-nav-view name="menuContent"></ion-nav-view>
+    </ion-side-menu-content>
+
+    <ion-side-menu side="left" class="main-container">
+        <ion-header-bar class="bar-stable">
+            <h1 class="title">Menu</h1>
+        </ion-header-bar>
+        <ion-content>
+            <ion-list>
+                <ion-item nav-clear menu-close href="#/3m-asd-calc/belt-test-end-of-life-start">
+                    Belt Test - End of Life
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/3m-asd-calc/scotch-bright-start">
+                    Scotch-Brite Wheel
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/3m-asd-calc/depressed-center-start">
+                    Depressed Center Grinding Wheel
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/3m-asd-calc/cut-off-wheel-start">
+                    Cut Off Wheel
+                </ion-item>
+                <ion-item nav-clear menu-close href="#/3m-asd-calc/disk-test-start">
+                    Disc Test
+                </ion-item>
+                <ion-item nav-clear menu-close  ng-click="goSettings()">
+                 Settings
+                </ion-item>
+                <!--<ion-item nav-clear menu-close  ng-disabled="true">-->
+                <!--Calculator 4-->
+                <!--</ion-item>-->
+            </ion-list>
+        </ion-content>
+    </ion-side-menu>
+</ion-side-menus>

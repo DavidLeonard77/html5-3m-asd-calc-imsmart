@@ -1,0 +1,279 @@
+.main-container{
+  .bar-header{
+    height: 54px;
+    padding-top: 10px;
+    z-index: 9999;
+    .title{
+      top: 15px;
+      font-weight: bold;
+    }
+    .buttons{
+      .left-buttons{
+        margin-left: 25px;
+      }
+      .right-buttons{
+        margin-right: 25px;
+        .button{
+          &:before{
+            font-size: 30px;
+            line-height: 30px;
+            padding-top: 4px;
+          }
+        }
+      }
+      button{
+        margin-top: 10px;
+      }
+    }
+  }
+}
+
+.menu{
+  .scroll-content{
+    top: 54px;
+    .list{
+      ion-item{
+        &[disabled="disabled"]{
+          background: #F0F0F0;
+        }
+        a.item-content{
+          padding: 16px 15px 16px 16px;
+        }
+        &:last-of-type{
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.popover {
+  &.customer-info{
+    top: 60px !important;
+    @include border-radius(10px);
+    height: 420px;
+    overflow: hidden;
+    .bar-header{
+      @include border-radius(10px);
+      border-bottom: none;
+      h1{
+        font-size: 14px;
+        color: $header-color;
+        padding-top: 10px;
+      }
+      button{
+        &.button {
+          @include button-styles;
+          color: $button-border-color;
+          font-size: 14px;
+          border: none;
+          padding: 0 10px;
+          margin-top: 0;
+        }
+      }
+    }
+    .scroll-content{
+      // overflow: hidden;
+      .list{
+        margin: 2px 10px;
+        border-top: 1px solid $border-color;
+        border-bottom: 1px solid $border-color;
+        @include border-radius(5px);
+        .item-input{
+          font-size: 14px;
+          span{
+            width: 125px;
+          }
+          input{
+            text-align: right;
+          }
+        }
+      }
+      .button-wrapper{
+        text-align: right;
+        button{
+          @include button-styles;
+        }
+      }
+    }
+    .popover-arrow{
+      left: 323px !important;
+    }
+  }
+  &.share{
+    top: 60px !important;
+    left: 770px !important;
+    margin-left: 0px !important;
+    width: 250px;
+    height: 150px;
+    padding: 5px 10px;
+    @include border-radius(10px);
+    .button{
+      @include button-styles;
+      width: 100%;
+      margin: 10px 0;
+      padding: 0 25px;
+    }
+    .popover-arrow{
+      left: 212px !important;
+    }
+  }
+}
+
+//Settings pop up styles
+.platform-ios.platform-cordova:not(.fullscreen) .bar-header:not(.bar-subheader) > *{
+  margin-top: 0; // to remove margin top values
+}
+
+//Chnaging position when the key-board is open
+// body{
+//   &.keyboard-open{
+//     .popup-container {
+//       &.personal-settings-popup {
+//         -webkit-align-items: initial;
+//         align-items: initial;
+//         .popup {
+//           margin-top: 100px;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.popup-container {
+  &.personal-settings-popup {
+    .popup {
+      width: 500px;
+      height: 305px;
+      @include border-radius(10px);
+      .bar-header{
+        position: relative;
+        height: 50px;
+        border-bottom: 1px solid $border-color;
+        @include custom-border-radius(10px, 10px, 0, 0);
+        h1{
+          font-size: 16px;
+          font-weight: bold;
+          width: 100%;
+          text-align: center;
+          height: 45px;
+          line-height: 45px;
+        }
+        .button{
+          position: absolute;
+          @include button-styles;
+          top: 10px;
+          right: 10px;
+          padding: 0 25px;
+          border: none;
+          box-shadow: none;
+        }
+        &:not(.bar-subheader){
+          height: 50px;
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+      }
+      .pane{
+        @include border-radius(10px);
+        form{
+          margin-top: 70px;
+          .list{
+            margin: 20px 30px;
+            @include border-radius(10px);
+            li{
+              &.item{
+                border: 1px solid $border-color;
+                font-family: 'HelveticaLTStd-Roman';
+                padding: 15px 0 15px 16px;
+                .row{
+                  padding: 0;
+                  width: 100%;
+                  .col{
+                    padding: 0;
+                    width: 100%;
+                    .input-label{
+                      float: left;
+                      font-size: 15px;
+                    }
+                    input{
+                      width: 65%;
+                      font-size: 15px;
+                      font-family: 'HelveticaLTStd-Roman';
+                    }
+                    .error{
+                      display: none;
+                      color: $error-color;
+                      font-size: 15px;
+                      font-family: 'HelveticaLTStd-Roman';
+                      height: 18px;
+                      line-height: 18px;
+                      padding-left: 34%;
+                      &.show{
+                        display: block;
+                      }
+                      &.hide{
+                        display: none;
+                      }
+                    }
+                  }
+                }
+                &:first-of-type{
+                  @include custom-border-radius(10px, 10px, 0, 0);
+                }
+                &:last-of-type{
+                  @include custom-border-radius(0, 0, 10px, 10px);
+                }
+              }
+              &:not(last-child){
+                border-bottom: 1px solid $border-color;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &.alert-popup{
+    .popup{
+      @include border-radius(10px);
+      background: $secton-header-background-color;
+      .popup-head{
+        border-bottom: none;
+        .popup-title{
+          font-size: 1.3em;
+        }
+      }
+      .popup-body{
+        padding-bottom: 15px;
+        span{
+          display: block;
+          width: 100%;
+          padding: 0 24px;
+          text-align: center;
+          font-size: 1em;
+        }
+      }
+      .popup-buttons{
+        @include custom-border-radius(0, 0, 10px, 10px);
+        padding: 0;
+        min-height: 50px;
+        height: 50px;
+        border-top: 1px solid $border-color;
+        .button{
+          @include border-radius(10px);
+          background: transparent;
+          color: $button-border-color;
+          border: none;
+          min-height: 50px;
+          height: 50px;
+          box-shadow: none;
+          &:first-of-type{
+            @include custom-border-radius(0, 0 , 0, 10px);
+            border-right: 1px solid $border-color;
+          }
+        }
+      }
+    }
+  }
+}

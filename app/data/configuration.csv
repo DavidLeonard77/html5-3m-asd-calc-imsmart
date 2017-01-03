@@ -1,0 +1,288 @@
+appViewTitle,3M ASD Value Calculators
+clearAllTitle,Are you sure?
+clearAllMessage,You will clear the data for the entire calculator
+clearAllCancel,Cancel
+clearAllConfirm,OK
+calculatorName,Belt Test - End of Life
+startParagraphTitle,Key Benefits
+startParagraph,Thank you for evaluating our 3M™ Belt. 3M is here to help make your business as productive and competitive as you can possibly be. Whatever your application or performance requirement, 3M offers a solution that maximizes value and productivity to help keep you as competitive as possible.
+startInput1PlaceHolder,Enter 3M Product Name
+startInput2PlaceHolder,Enter Competitor Name
+startDisclaimerText,Disclaimer: Results may vary by your industry. Results are not guaranteed.
+startNextButtonText,Next - Performance
+startClearButtonText,Clear Calculator
+performTitle,Performance Efficiency
+performCompetitorTitle,COMPETITOR
+performThreeMTitle,3M
+performCompInput1PlaceHolder,Time to process a part - Seconds
+performThreeMInput1PlaceHolder,Time to process a part - Seconds
+performCompInput2PlaceHolder,Parts per belt
+performThreeMInput2PlaceHolder,Parts per belt
+performBackButtonText,Back
+performResetButtonText,Reset
+performNextButtonText,Next - Savings
+savingsTitle,Savings Calculator
+savingsCompetitorTitle,COMPETITOR
+savingsThreeMTitle,3M
+savingsCompInput1PlaceHolder,Cost per belt
+savingsCompInput2PlaceHolder,Burden rate per hour
+savingsCompInput3PlaceHolder,Changeover time - Minutes
+savingsCompInput4PlaceHolder,Annual spend on belts
+savingsCompCheckBoxText,Includes Rejects and Rework?
+savingsThreeMInput1PlaceHolder,Cost per belt
+savingsRandRInput1PlaceHolder,Rejects (Scrap)
+savingsRandRInput2PlaceHolder,Cost per reject
+savingsRandRInput3PlaceHolder,Rework
+savingsRandRInput4PlaceHolder,Time to fix parts - Minutes
+savingsBackButtonText,Back
+savingsResetButtonText,Reset
+savingsNextButtonText,Next - Results
+resultsPerformTitle,Performance Efficiency Results
+resultsSavingsTitle,Savings Calculator Results
+resultsTimeToProcess,Test Results: Time to Process Part - Seconds
+resultsPartsPerBelt,Test Results: Parts per Belt
+resultsAnnValueDelivered,Total Annual Value Delivered
+resultsAbrasiveSavings,Abrasives Savings
+resultsChangeoverSavings,Changeover Savings
+resultsLaborSavings,Labor Savings
+resultsFasterCut,faster cut
+resultsMoreParts,more parts<br/>per belt
+resultsAnnualSavings,Total Annual Savings
+resultsAnnualCost,Total Annual Cost
+resultsTotalCostSavings,total cost<br/>savings
+resultsBackButtonText,Back
+
+reportIntroParagraph,Thank you for evaluating our 3M Abrasive products. Below is your personalized analysis showing the results to the latest product testing we conducted in your facility. We appreciate the opportunity to work with your company and share with you the benefits of using 3M.
+reportResultsTitle,Performance Efficiency Results
+reportInputsLabel,Inputs
+report3MLabel,3M Belt
+reportCompetitorLabel,Competitor
+reportProductNameLabel,Product Name
+reportTimeProcessLabel,Time to Process Part - Seconds
+reportAnnualSavings,Total Annual Savings
+reportPartPerLabel,Parts per Belt
+reportCostPerBelt,Cost per Belt
+reportBurdenRateLabel,Burden rate<br>per hour
+reportChangeoverTime,Changeover time -<br>minutes
+reportResultsLabel,Results
+reportAbrasiveSavingsLabel,Abrasive Savings
+reportChangeoverSavings,Changeover Savings
+reportLaborSavings,Labor Savings
+reportAnnualCost,Total Annual Cost
+
+sbcalculatorName,Scotch-Brite Wheel - Quick Test
+sbstartParagraphTitle,Key Benefits
+sbstartParagraph,Thank you for evaluating our Scotch-Brite™ Wheels. 3M is here to help make your business as productive and competitive as you can possibly be, and we hope you will see why operators choose Scotch-Brite™ Wheels time and again.
+sbstartInput1PlaceHolder,Enter 3M Product Name
+sbstartInput2PlaceHolder,Enter Competitor Name
+sbstartDisclaimerText, Disclaimer: Results may vary by your industry. Results are not guaranteed.
+sbstartNextButtonText,Next - Performance
+sbstartClearButtonText,Clear Calculator
+sbperformTitle,Performance Efficiency
+sbperformCompetitorTitle,COMPETITOR
+sbperformThreeMTitle,3M
+sbperformCompInput1PlaceHolder,Time to Process a Part - Seconds
+sbperformCompInput2PlaceHolder,Parts per Wheel
+sbperformCompInput3PlaceHolder,Number of Parts During Test
+sbperformCompInput4PlaceHolder,Test Time - Minutes
+sbperformThreeMInput1PlaceHolder,Time to Process a Part - Seconds
+sbperformThreeMInput2PlaceHolder,Parts per Wheel
+sbperformThreeMInput3PlaceHolder,Number of Parts During Test
+sbperformThreeMInput4PlaceHolder,Test Time - Minutes
+sbperformBackButtonText,Back
+sbperformResetButtonText,Reset
+sbperformNextButtonText,Next - Savings
+sbsavingsTitle,Savings Calculator
+sbsavingsCompetitorTitle,COMPETITOR
+sbsavingsThreeMTitle,3M
+sbsavingsCompInput1PlaceHolder,Cost per wheel
+sbsavingsCompInput2PlaceHolder,Burden Rater per Hour
+sbsavingsCompInput3PlaceHolder,Changeover Time - Minutes
+sbsavingsCompInput4PlaceHolder,Annual Spend per Year on Wheels
+sbsavingsCompCheckBoxText,Includes Rejects and Rework?
+sbsavingsThreeMInput1PlaceHolder,Cost per wheel
+sbsavingsRandRInput1PlaceHolder,Rejects (Scrap)
+sbsavingsRandRInput2PlaceHolder,Cost per reject
+sbsavingsRandRInput3PlaceHolder,Rework
+sbsavingsRandRInput4PlaceHolder,Time to fix parts - Minutes
+sbsavingsBackButtonText,Back
+sbsavingsResetButtonText,Reset
+sbsavingsNextButtonText,Next - Results
+sbresultsPerformTitle,Performance Efficiency Results
+sbresultsSavingsTitle,Savings Calculator Results
+sbresultsPartsPerWheel,Test Results: Parts per Wheel
+sbresultsTimeToProcess,Test Results: Time to Process Part - Seconds
+sbresultsAnnualCost,Total Annual Cost
+sbresultsFasterCut,faster cut
+sbresultsMoreParts,more parts<br/>per belt
+sbresultsTotalCostSavings,total cost<br/>savings
+sbresultsAnnValueDelivered,Total Annual Value Delivered
+sbresultsAbrasiveSavings,Abrasives Savings
+sbresultsChangeoverSavings,Changeover Savings
+sbresultsLaborSavings,Labor Savings
+sbresultsAnnualSavings,Total Annual Savings
+sbresultsBackButtonText,Back
+dccalculatorName,Depressed Center Grinding Wheel Test
+dcstartParagraphTitle,Key Benefits
+dcstartParagraph,Thank you for evaluating the 3M™ Cubitron™ II Grinding Wheel. 3M is here to help make your business as productive and competitive as you can possibly be, and we hope you will readily see why 3M™ Cubitron™ II bonded wheels are revolutionizing the grinding process with 3M Precision Shaped Grain technology.
+dcstartInput1PlaceHolder,Enter 3M Product Name
+dcstartInput2PlaceHolder,Enter Competitor Name
+dcstartDisclaimerText,Disclaimer: Results may vary by your industry. Results are not guaranteed.
+dcstartNextButtonText,Next - Performance
+dcstartClearButtonText,Clear Calculator
+dcperformTitle,Performance Efficiency
+dcperformCompetitorTitle,COMPETITOR
+dcperformThreeMTitle,3M
+dcperformCompInput1PlaceHolder,Wheel Start Weight (g)
+dcperformCompInput2PlaceHolder,Number of Parts
+dcperformCompInput3PlaceHolder,Seconds to Grind
+dcperformCompInput4PlaceHolder,Wheel End Weight (g)
+dcperformCompInput5PlaceHolder,Usable  X% of Wheel to End of Life
+dcperformThreeMInput1PlaceHolder,Wheel Start Weight (g)
+dcperformThreeMInput2PlaceHolder,Number of Parts
+dcperformThreeMInput3PlaceHolder,Seconds to Grind
+dcperformThreeMInput4PlaceHolder,Wheel End Weight (g)
+dcperformBackButtonText,Back
+dcperformResetButtonText,Reset
+dcperformNextButtonText,Next - Savings
+dcsavingsTitle,Savings Calculator
+dcsavingsCompetitorTitle,COMPETITOR
+dcsavingsThreeMTitle,3M
+dcsavingsCompInput1PlaceHolder,Cost per Wheel
+dcsavingsCompInput2PlaceHolder,Burden Rate per Hour
+dcsavingsCompInput3PlaceHolder,Changeover time - Minutes
+dcsavingsCompInput4PlaceHolder,Annual Spend on Wheels
+dcsavingsCompCheckBoxText,Includes Rejects and Rework?
+dcsavingsThreeMInput1PlaceHolder,Cost per Wheel
+dcsavingsThreeMCheckBoxText,Includes Rejects and Rework?
+dcsavingsRandRInput1PlaceHolder,Rejects (Scrap)
+dcsavingsRandRInput2PlaceHolder,Cost per reject
+dcsavingsRandRInput3PlaceHolder,Rework
+dcsavingsRandRInput4PlaceHolder,Time to fix parts - Minutes
+dcsavingsBackButtonText,Back
+dcsavingsResetButtonText,Reset
+dcsavingsNextButtonText,Next - Results
+dcresultsPerformTitle,Performance Efficiency Results
+dcresultsSavingsTitle,Savings Calculator Results
+dcresultsTimeToProcess,Test Results: Time to Process Part - Seconds
+dcresultsPartsPerWheel,Test Results: Number of Parts per Wheel
+dcresultsAnnualCost,Total Annual Cost
+dcresultsFasterCut,faster cut
+dcresultsMoreParts,more parts<br/>per wheel
+dcresultsTotalCostSavings,total cost<br/>savings
+dcresultsAnnValueDelivered,Total Annual Value Delivered
+dcresultsAbrasiveSavings,Abrasives Savings
+dcresultsChangeoverSavings,Changeover Savings
+dcresultsLaborSavings,Labor Savings
+dcresultsAnnualSavings,Total Annual Savings
+dcresultsBackButtonText,Back
+cocalculatorName,Cut Off Wheel – End of Life Test
+costartParagraphTitle,Key Benefits
+costartParagraph,Thank you for evaluating our 3M™ Cubitron™ II Cut-Off Wheels. 3M is here to help make your business as productive and competitive as you can possibly be, and we hope you will readily see why 3M™ Cubitron™ II wheels are revolutionizing the metal fabrication process with 3M Precision Shaped Grain technology.
+costartInput1PlaceHolder,Enter 3M Product Name
+costartInput2PlaceHolder,Enter Competitor Name
+costartDisclaimerText,Disclaimer: Results may vary by your industry. Results are not guaranteed.
+costartNextButtonText,Next - Performance
+costartClearButtonText,Clear Calculator
+coperformTitle,Performance Efficiency
+coperformCompetitorTitle,COMPETITOR
+coperformThreeMTitle,3M
+coperformCompInput1PlaceHolder,Number of Cuts
+coperformCompInput2PlaceHolder,Seconds to Cut
+coperformCompInput3PlaceHolder,Current Cuts per Part
+coperformCompInput4PlaceHolder,Current Parts Produced per Year
+coperformCompInput5PlaceHolder,Current Cuts per Year
+coperformThreeMInput1PlaceHolder,Number of Cuts
+coperformThreeMInput2PlaceHolder,Seconds to Cut
+coperformThreeMInput3PlaceHolder,Current Cuts per Part
+coperformThreeMInput4PlaceHolder,Current Parts Produced per Year
+coperformThreeMInput5PlaceHolder,Current Cuts per Year
+coperformBackButtonText,Back
+coperformResetButtonText,Reset
+coperformNextButtonText,Next - Savings
+cosavingsTitle,Savings Calculator
+cosavingsCompetitorTitle,COMPETITOR
+cosavingsThreeMTitle,3M
+cosavingsCompInput1PlaceHolder,Cost per Wheel
+cosavingsCompInput2PlaceHolder,Labor Burden Cost per Hour
+cosavingsCompInput3PlaceHolder,Changeover Time – Seconds
+cosavingsCompInput4PlaceHolder,Cuts per Part
+cosavingsCompInput5PlaceHolder,Mfg Unit Cost per Part
+cosavingsCompInput6PlaceHolder,Margin on Finished Part
+cosavingsThreeMInput1PlaceHolder,Cost per Wheel
+cosavingsThreeMInput2PlaceHolder,Labor Burden Cost per Hour
+cosavingsThreeMInput3PlaceHolder,Seconds per Changeover
+cosavingsThreeMInput4PlaceHolder,Cuts per Part
+cosavingsThreeMInput5PlaceHolder,Mfg Unit Cost per Part
+cosavingsThreeMInput6PlaceHolder,Margin on Finished Part
+cosavingsCompCheckBoxText,Includes Rejects and Rework?
+cosavingsRandRInput1PlaceHolder,Rejects (Scrap)
+cosavingsRandRInput2PlaceHolder,Cost per reject
+cosavingsRandRInput3PlaceHolder,Rework
+cosavingsRandRInput4PlaceHolder,Time to fix parts - Minutes
+cosavingsBackButtonText,Back
+cosavingsResetButtonText,Reset
+cosavingsNextButtonText,Next - Results
+coresultsPerformTitle,Performance Efficiency Results
+coresultsSavingsTitle,Savings Calculator Results
+coresultsPartsPerHour,Test Results: Parts Per Hour
+coresultsCutsPerWheel,Test Results: Number of Cuts Per Wheel
+coresultsAnnualCost,Total Annual Cost
+coresultsFasterCut,faster cut
+coresultsMoreParts,more parts<br/>per belt
+coresultsTotalCostSavings,total cost<br/>savings
+coresultsAnnValueDelivered,Total Annual Value Delivered
+coresultsAbrasiveSavings,Abrasives Savings
+coresultsChangeoverSavings,Changeover Savings
+coresultsLaborSavings,Labor Savings
+coresultsAnnualSavings,Total Annual Savings
+coresultsBackButtonText,Back
+dtcalculatorName,Disc Test
+dtstartParagraphTitle,Key Benefits
+dtstartParagraph,Thank you for evaluating our 3M™  Discs. 3M is here to help make your business as productive and competitive as you can possibly be. Whatever your application or performance requirement, 3M offers a solution that maximizes the value and productivity to help keep you as competitive as possible.
+dtstartInput1PlaceHolder,Enter 3M Product Name
+dtstartInput2PlaceHolder,Enter Competitor Name
+dtstartDisclaimerText,Disclaimer: Results may vary by your industry. Results are not guaranteed.
+dtstartNextButtonText,Next - Performance
+dtstartClearButtonText,Clear Calculator
+dtperformTitle,Performance Efficiency
+dtperformCompetitorTitle,COMPETITOR
+dtperformThreeMTitle,3M
+dtperformCompInput1PlaceHolder,Time to process a part - Seconds
+dtperformCompInput2PlaceHolder,Parts per disc
+dtperformThreeMInput1PlaceHolder,Time to process a part - Seconds
+dtperformThreeMInput2PlaceHolder,Parts per disc
+dtperformBackButtonText,Back
+dtperformResetButtonText,Reset
+dtperformNextButtonText,Next - Savings
+dtsavingsTitle,Savings Calculator
+dtsavingsCompetitorTitle,COMPETITOR
+dtsavingsThreeMTitle,3M
+dtsavingsCompInput1PlaceHolder,Cost per disc
+dtsavingsCompInput2PlaceHolder,Burden rate per hour
+dtsavingsCompInput3PlaceHolder,Changeover time - Seconds
+dtsavingsCompInput4PlaceHolder,Annual spend per year on discs
+dtsavingsThreeMInput1PlaceHolder,Cost per disc
+dtsavingsBackButtonText,Back
+dtsavingsResetButtonText,Reset
+dtsavingsNextButtonText,Next - Results
+dtresultsPerformTitle,Performance Efficiency Results
+dtresultsSavingsTitle,Savings Calculator Results
+dtresultsPartsPerHour,Test Results: Parts Per Hour
+dtresultsCutsPerWheel,Test Results: Number of Cuts Per Wheel
+dtresultsAnnualCost,Total Annual Cost
+dtresultsFasterCut,faster cut
+dtresultsMoreParts,more parts<br/>per belt
+dtresultsTotalCostSavings,total cost<br/>savings
+dtresultsAnnValueDelivered,Total Annual Value Delivered
+dtresultsAbrasiveSavings,Abrasives Savings
+dtresultsChangeoverSavings,Changeover Savings
+dtresultsLaborSavings,Labor Savings
+dtresultsAnnualSavings,Total Annual Savings
+dtresultsBackButtonText,Back
+notValidAmount,Not a valid amount
+notValidNumber,Not a valid number
+iPhoneNextButtonText,Next
+iPhoneClearButtonText,Clear
+bccAddress,mwendorf@mmm.com
+currency,$

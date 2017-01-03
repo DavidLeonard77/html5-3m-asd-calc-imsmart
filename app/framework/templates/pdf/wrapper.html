@@ -1,0 +1,43 @@
+<div class="header floatfix">
+    <div>
+        <img src="calculators/calculator-common/img/logo-pdf.png">
+    </div>
+    <div>
+        <p>{{settings.userName}}</p>
+        <p>{{settings.phone}}</p>
+        <p>{{settings.email}}</p>
+    </div>
+</div>
+
+{{reportHTML}}
+
+<div class="customer-info section-wrapper floatfix">
+    <h2>Customer Info</h2>
+    <table class="info-table">
+        <tr>
+            <td>
+              Location:<br>
+              {{customer.cLocation}}
+            </td>
+            <td>
+              Contact:<br>
+              {{customer.contact}}
+            </td>
+        </tr>
+        <tr>
+            <td>Company Name: {{customer.companyName}}</td>
+            <td>Application: {{customer.application}}</td>
+        </tr>
+        <tr>
+            <td>Date: {{customer.date}}</td>
+            <td>Comments: {{customer.comments}}</td>
+        </tr>
+    </table>
+</div>
+
+<div class="pdf-disclaimer">
+    <p><b>Disclaimer:</b></p>
+    <p>Warranty, Limited Remedy, and Disclaimer: Many factors beyond 3M's control and uniquely within user's knowledge and control can affect the use and performance of a 3M product in a particular application. User is solely responsible for evaluating the 3M product and determining whether it is fit for a particular purpose and suitable for user's method of application.</p>
+    <p>Unless an additional warranty is specifically stated on the applicable 3M product packaging or product literature, 3M warrants that each 3M product meets the applicable 3M product specification at the time 3M ships the product. 3M MAKES NO OTHER WARRANTIES OR CONDITIONS, EXPRESS OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, ANY IMPLIED WARRANTY OR CONDITION OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE OR ANY IMPLIED WARRANTY OR CONDITION ARISING OUT OF A COURSE OF DEALING, CUSTOM OR USAGE OF TRADE. If the 3M product does not conform to this warranty, then the sole and exclusive remedy is, at 3M's option, replacement of the 3M product or refund of the purchase price.</p>
+    <p>Limitation of Liability: Except where prohibited by law, 3M will not be liable for any loss or damage arising from the 3M product, whether direct, indirect, special, incidental or consequential, regardless of the legal theory asserted, including warranty, contract, negligence or strict liability.</p>
+</div>

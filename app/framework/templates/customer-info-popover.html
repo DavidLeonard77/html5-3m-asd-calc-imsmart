@@ -1,0 +1,40 @@
+<ion-popover-view class="customer-info">
+    <ion-header-bar align-title="left">
+        <h1 class="title">CUSTOMER INFO</h1>
+        <button class="button" ng-click="clearInfo()">Clear</button>
+    </ion-header-bar>
+    <ion-content>
+        <div class="list list-inset">
+            <label class="item item-input">
+                <span class="input-label">Date:</span>
+                <input data-tap-disabled="true" type="date" ng-model="customer.date">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Company Name:</span>
+                <input data-tap-disabled="true" type="text" ng-model="customer.companyName">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Location:</span>
+                <input data-tap-disabled="true" type="text" ng-model="customer.cLocation">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Contact:</span>
+                <input data-tap-disabled="true" type="text" ng-model="customer.contact">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Application:</span>
+                <input data-tap-disabled="true" type="text" ng-model="customer.application">
+            </label>
+            <label class="item item-input">
+                <span class="input-label">Comments:</span>
+                <input data-tap-disabled="true" type="text" ng-model="customer.comments">
+            </label>
+        </div>
+        <div class="row button-wrapper" ng-show="isPDFReady">
+            <div class="col">
+                <!--<button type="button" ng-click="$parent.saveCustomer(customer)">Next</button>-->
+                <button type="button" ng-show="onResultPage" ng-click="showSharePopover($event)">Next</button>
+            </div>
+        </div>
+    </ion-content>
+</ion-popover-view>

@@ -1,0 +1,28 @@
+<p>{{chartData.title}}</p>
+
+<div class="graph-container floatfix">
+  <div class="bar-wrapper">
+    <div class="bar-container">
+      <div class="spacer-container"
+           style="height:{{100 - chartData.left.percent}}%;"></div>
+      <div class="value-container"
+           style="height:{{chartData.left.percent}}%; line-height:{{chartData.left.percent}}px;">
+        {{chartData.currency}}{{chartData.left.value | number : 0}}
+      </div>
+      <div class="axis-name">{{chartData.left.label}}</div>
+    </div>
+    <div class="bar-container">
+      <div class="spacer-container"
+           style="height:{{100 - chartData.right.percent}}%;"></div>
+      <div class="value-container"
+           style="height:{{chartData.right.percent}}%; line-height:{{chartData.right.percent}}px;">
+        {{chartData.currency}}{{chartData.right.value | number : 0}}
+      </div>
+      <div class="axis-name">{{chartData.right.label}}</div>
+    </div>
+    <div ng-class="['value-circle', chartData.circle.css]">
+      <span>{{chartData.circle.percent | number : 0}}%</span><br/>
+      <span ng-bind-html="chartData.circle.label"></span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+.common-container {
+  background: url(../img/background.png) no-repeat;
+  background-size: cover;
+  .scroll-view {
+    background: transparent;
+    // height: 100%;
+    top: 54px;
+    .list {
+      .item {
+        &.invalid {
+          border-color: red;
+          z-index: 3;
+        }
+        span {
+          color: $graph-color-left-bar;
+        }
+        input {
+          text-align: right;
+          padding-top: 5px;
+        }
+      }
+    }
+    div {
+      &.view-content-wrapper {
+        min-height: 768px;
+        height: 768px;
+      }
+    }
+    .title-container {
+      background: url(../img/headerBar.png) no-repeat;
+      background-size: cover;
+      height: 63px;
+      color: #ffffff;
+      text-align: center;
+      line-height: 63px;
+      font-size: 1.3em;
+      font-weight: bold;
+      &:before {
+        content: '';
+        background: url(../img/logo-only.png) no-repeat;
+        background-size: cover;
+        height: 34px;
+        width: 64px;
+        position: absolute;
+        left: 20px;
+        top: 13px;
+      }
+    }
+    .view-title {
+      height: 56px;
+      background: #ffffff;
+      border-bottom: 1.5px solid $input-border-color;
+      font-family: 'HelveticaLTStd-Roman';
+      font-size: 20px;
+      color: $title-color;
+      line-height: 56px;
+      padding: 0 4%;
+    }
+  }
+  .bar-footer {
+    height: 60px;
+    background: $footer-background;
+    margin-top: 0;
+    button {
+      @include button-styles;
+      // margin-top: 8px;
+      padding: 4px 20px;
+      &:first-of-type{
+        position: absolute;
+        left: 4%;
+      }
+      &:last-of-type {
+        &:not(:first-of-type){
+          position: absolute;
+          right: 4%;
+        }
+      }
+      &.settings-button {
+        position: absolute;
+        left: 3%;
+        margin-top: 10px;
+        border: none;
+        background: none;
+        padding: 0;
+        &:before {
+          font-size: 39px;
+          line-height: 39px;
+        }
+      }
+      &.clear-button{
+        position: absolute;
+        left: 7%;
+      }
+      &.reset-button{
+        position: absolute;
+        left: 12%;
+      }
+      &.reset-mobile{
+        position: absolute;
+        left: 45%;
+      }
+    }
+  }
+}

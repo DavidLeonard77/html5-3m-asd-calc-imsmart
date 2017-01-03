@@ -1,0 +1,93 @@
+.start{
+  .scroll-view {
+    .title-container{
+      &:before{
+        content: '';
+        background: url(../img/logo.png) no-repeat;
+        background-size: cover;
+        height: 36px;
+        width: 203px;
+        position: absolute;
+        left: 20px;
+        top: 13px;
+      }
+    }
+  }
+  form.form-container{
+    .keybenefits-container{
+      margin: 3%;
+      background: #ffffff;
+      height: 220px;
+      width: 94%;
+      @include border-radius(10px);
+      div{
+        float: left;
+        &.image{
+          @include custom-border-radius(10px, 0, 0, 10px);
+          width:50%;
+          img{
+            height: 220px;
+          }
+        }
+        &.content{
+          height: 210px;
+          width: 50%;
+          padding: 20px;
+          h1{
+            font-size: 17px;
+            font-weight: bold;
+          }
+          p{
+            font-size: 13px;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+      }
+    }
+    .clear-button-container{
+      width: 92%;
+      margin: 0 4%;
+      button{
+        float: right;
+        padding: 8px 10px;
+        @include button-styles;
+      }
+    }
+    .list-pad {
+      padding: 30px 280px 290px;
+    }
+    .list{
+      @include border-radius(5px);
+      border: none;
+      .item-input{
+        border: 1px solid $input-border-color;
+        padding: 8px 0 3px 16px;
+        input{
+          font-family: 'HelveticaLTStd-Roman';
+          font-size: 18px;
+          line-height: 20px;
+        }
+        &:first-of-type{
+          @include custom-border-radius(5px, 5px, 0, 0);
+        }
+        &:last-of-type{
+          @include custom-border-radius(0, 0, 5px, 5px);
+        }
+      }
+    }
+    .disclaimer-text{
+      position: absolute;
+      z-index: 6000;
+      width: 466px;
+      top: 470px;
+      text-align: center;
+      padding: 65px 0 65px;
+      font-size: 11px;
+      line-height: 13px;
+    }
+  }
+}

@@ -1,0 +1,61 @@
+<ion-view view-title="{{config.appViewTitle}}"
+          ng-class="start {{calc.key}}-start common-container">
+
+  <form name="forms.{{calc.form}}" novalidate ng-form-commit class="form-container">
+
+    <ion-scroll>
+      <div class="view-content-wrapper">
+
+        <div class="title-container">{{config[ calc.name ]}}</div>
+
+        <div class="keybenefits-container floatfix">
+          <div class="image"></div>
+          <div class="content">
+            <h1>{{config[ calc.title ]}}</h1>
+            <p>{{config[ calc.intro ]}}</p>
+          </div>
+        </div>
+
+        <div class="list-pad">
+          <div class="list">
+            <label class="item item-input"
+                   ng-repeat="index in calc.inputs"
+                   ng-class="[{'invalid' : validation.fieldInvalid( calc.form, calc.input[index] ) }]">
+
+              <span>{{config[ calc.input[index].label ]}}</span>
+              <input type="{{calc.input[index].type}}"
+                     id="{{calc.input[index].id}}"
+                     name="{{calc.input[index].name}}"
+                     ng-required="calc.input[index].required"
+                     ng-model="calculator[ calc.id ][ calc.input[index].model ]"
+                     data-tap-disabled="true">
+            </label>
+          </div>
+          <div class="disclaimer-text">{{config[ calc.disclaimer ]}}</div>
+        </div>
+
+      </div>
+    </ion-scroll>
+
+    <div class="bar bar-footer">
+
+      <!-- Settings -->
+      <button type="{{calc.button[0].type}}"
+              ng-click="navigation[ calc.button[0].eventType ]()"
+              ng-class="[calc.button[0].css]"></button>
+
+      <!-- Clear All -->
+      <button type="{{calc.button[1].type}}"
+              ng-click="navigation[ calc.button[1].eventType ]()"
+              ng-class="[calc.button[1].css]">
+              {{config[ calc.button[1].label ]}}</button>
+
+      <!-- Next -->
+      <button ng-click="navigation[ calc.button[2].eventType ]( calc.form )"
+              ng-disabled="forms[ calc.form ].$invalid">
+              {{config[ calc.button[2].label ]}}</button>
+    </div>
+
+  </form>
+
+</ion-view>

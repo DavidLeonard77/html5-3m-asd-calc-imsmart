@@ -1,0 +1,70 @@
+.performance{
+  .list{
+    width: 45%;
+    background: transparent;
+    float: left;
+    h3{
+      font-size: 14px;
+      background: transparent;
+      color: $header-color;
+    }
+    > label{
+      height: 56px;
+      font-size: 18px;
+      line-height: 20px;
+      font-family: 'HelveticaLTStd-Roman';
+      &:first-of-type{
+        @include custom-border-radius(5px, 5px, 0, 0);
+        background: $input-disabled-color;
+      }
+      &:last-of-type{
+        @include custom-border-radius(0, 0, 5px, 5px);
+      }
+      input{
+        font-size: 18px;
+      }
+    }
+    div{
+      display: none;
+      width: 100%;
+      height: 30px;
+      &.show{
+        display: block;
+      }
+      &.hide{
+        display: none;
+      }
+      line-height: 30px;
+      color: $error-color;
+      background: #fff;
+      border-left: 1px solid $input-border-color;
+      border-right: 1px solid $input-border-color;
+      padding-left: 16px;
+      &:last-child{
+        @include custom-border-radius(0, 0, 5px, 5px);
+        border-bottom: 1px solid $input-border-color;
+      }
+      &.show{
+        display: block;
+      }
+      &.hide{
+        display: none;
+      }
+    }
+    &.competitor-list{
+      margin-left: 4%;
+      margin-right: 1%;
+    }
+    &.client-list{
+      margin-left: 1%;
+      margin-right: 4%;
+    }
+    &.error{      
+      > label{
+        &:last-of-type{
+          @include border-radius(0);
+        }
+      }
+    }
+  }
+}

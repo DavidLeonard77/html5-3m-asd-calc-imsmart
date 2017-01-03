@@ -1,0 +1,18 @@
+{
+  "language_code": {
+    "Setting Category": "Language Option",
+    "settingId": "languageOption",
+    "settingOrder": 0,
+    "name": "Language Code",
+    "id": "language_code",
+    "setting": "en_US"
+  },
+  "selected_db": {
+    "Setting Category": "Database Option",
+    "settingId": "databaseOption",
+    "settingOrder": 1,
+    "name": "Selected Database",
+    "id": "selected_db",
+    "setting": "mmm-asd-product-selector"
+  }
+}

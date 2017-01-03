@@ -1,0 +1,178 @@
+{
+  "popups": {
+
+    "share": {
+
+      "label": [
+        "Share"
+      ],
+
+      "button": [
+        "Email",
+        "Preview"
+      ]
+
+    },
+
+    "more": {
+
+      "button": [
+        "Terms & Conditions",
+        "Help"
+      ]
+
+    },
+
+    "tip": {
+
+      "label": [
+        "Tech Tip"
+      ]
+
+    }
+
+  },
+
+  "views": {
+
+    "tabs": {
+
+      "tab": [
+        "Products",
+        "Substrates",
+        "Machines",
+        "Applications",
+        "Summary",
+        "Details",
+        "Settings",
+        "Reset"
+      ]
+
+    },
+
+    "products": {
+
+      "title": [
+        "Products"
+      ],
+
+      "label": [
+        "Choose Your Product"
+      ]
+
+    },
+
+    "substrates": {
+
+      "title": [
+        "Substrates"
+      ],
+
+      "label": [
+        "Choose Your Substrate"
+      ]
+
+    },
+
+    "applications": {
+
+      "title": [
+        "Applications"
+      ],
+
+      "label": [
+        "Choose Your Application",
+        "Info"
+      ]
+
+    },
+
+    "settings": {
+
+      "title": [
+        "Settings"
+      ],
+
+      "label": [
+        "Company Name",
+        "Your Name",
+        "Phone Number",
+        "Email address"
+      ]
+
+    },
+
+    "machines": {
+
+      "title": [
+        "Machines"
+      ],
+
+      "label": [
+        "Choose Your Machine"
+      ]
+
+    },
+
+    "summary": {
+
+      "title": [
+        "Summary"
+      ],
+
+      "label": [
+        "Available In:",
+        "Recommended Product",
+        "Alternative Product",
+        "General Use"
+      ],
+
+      "button": [
+        "Product Details"
+      ]
+
+    },
+
+    "details": {
+
+      "title": [
+        "Details"
+      ],
+
+      "tab": [
+        "Overview",
+        "Specifications",
+        "Related Documents"
+      ],
+
+      "bullet": [
+        "Backing Material:",
+        "Backing Weight:",
+        "Converted Form:",
+        "Equipment / Machine:",
+        "Grade:",
+        "Mineral Type:",
+        "Substrates:"
+      ],
+
+      "label": [
+        "No related documents were found"
+      ]
+
+    },
+
+    "reset": {
+
+      "title": [
+        "Products"
+      ],
+
+      "label": [
+        "Choose Your Product"
+      ]
+
+    }
+
+  }
+
+}

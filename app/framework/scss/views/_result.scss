@@ -1,0 +1,126 @@
+.result{
+  .results-container{
+    width: 92%;
+    margin: 2% 4% 1%;
+    border: 1px solid $border-color;
+    @include border-radius(10px);
+    background: #fff;
+    height: 260px;
+    h3{
+      height: 40px;
+      @include custom-border-radius(10px, 10px, 0, 0);
+      border-bottom: 1px solid $border-color;
+      font-family: 'HelveticaLTStd-BoldCond';
+      font-size: 15px;
+      line-height: 40px;
+      padding-left: 23px;
+    }
+    .chart-wrapper,
+    cn-chart{
+      float: left;
+      width: 50%;
+      padding-left: 23px;
+      p{
+        font-family: 'HelveticaLTStd-Roman';
+        font-size: 15px;
+      }
+      table{
+        width: 99%;
+        tr{
+          td,th{
+            width: 33%;
+            border: 1px solid $border-color;
+            padding: 10px;
+            line-height: 20px;
+            text-align: center;
+          }
+        }
+      }
+      &:last-of-type{
+        padding-left: 80px;
+      }
+      &:nth-of-type(2n){
+        p{
+          padding-left: 20px;
+        }
+      }
+    }
+    .scroll-view{
+      height: 180px;
+    }
+    &:last-of-type{
+      height: 350px;
+      margin-top: 15px;
+      .scroll-view{
+        height: 225px;
+      }
+    }
+  }
+  .graph-container{
+    height: 100px;
+    width: 100%;
+    margin-left: 45px;
+    margin-top: 20px;
+    font-family: 'HelveticaLTStd-Roman';
+    .bar-wrapper{
+      float: left;
+      border-bottom: 1px solid $border-color;
+      .bar-container{
+        height: 115px;
+        width: 80px;
+        float: left;
+        margin: 0 15px;
+        .spacer-container{
+          background: #fff;
+        }
+        .value-container{
+          text-align: center;
+          font-size: 10.5px;
+          color: #000;
+          @include custom-border-radius(10px, 10px, 0, 0);
+        }
+        &:nth-of-type(1){
+          .value-container{
+            background: $graph-color-left-bar;
+          }
+        }
+        &:nth-of-type(2){
+          .value-container{
+            background: $graph-color-right-bar;
+          }
+        }
+        .axis-name{
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          padding-top: 8px;
+        }
+      }
+    }
+    .value-circle{
+      float: left;
+      width: 72px;
+      height: 72px;
+      background: $graph-circle-color;
+      @include border-radius(72px);
+      font-size: 10px;
+      line-height: 12px;
+      font-family: 'HelveticaLTStd-Roman';
+      text-align: center;
+      padding: 11px;
+      margin-left: 10px;
+      span{
+        &:first-of-type {
+          font-size: 16px;
+          line-height: 20px;
+        }
+      }
+      &.faster-cut{
+        padding-top: 17px;
+      }
+      &.more-parts{
+        padding: 12px 5px;
+      }
+    }
+  }
+}

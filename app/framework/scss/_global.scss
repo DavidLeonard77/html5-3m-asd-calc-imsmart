@@ -1,0 +1,97 @@
+//Colors
+$white : #ffffff;
+$button-border-color : #0083fe;
+$input-border-color: #cccccc;
+$input-disabled-color: #f3f3f3;
+$title-color: #363636;
+$header-color: #6d6d72;
+$error-color: #ff0000;
+$border-color: #cccccc;
+$input-text-color: #cccccc;
+$graph-color-left-bar: #a2a2a2;
+$graph-color-right-bar: #cc4f3c;
+$graph-circle-color: #e2ab73;
+$footer-background: #f8f8f8;
+//pdf
+$secton-header-background-color: #ebebeb;
+$font-color: #3c3c3c;
+$font-bold-color: #222222;
+$graph-color-left-bar-pdf: #a2a2a2;
+$graph-color-right-bar-pdf: #cc4f3c;
+
+@font-face {
+  font-family: 'HelveticaLTStd-BlkCond';
+  src: url('../../../fonts/HelveticaLTStd-BlkCond.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Bold';
+  src: url('../../../fonts/HelveticaLTStd-Bold.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-BoldCond';
+  src: url('../../../fonts/HelveticaLTStd-BoldCond.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Cond';
+  src: url('../../../fonts/HelveticaLTStd-Cond.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Light';
+  src: url('../../../fonts/HelveticaLTStd-Light.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-LightCond';
+  src: url('../../../fonts/HelveticaLTStd-LightCond.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaLTStd-Roman';
+  src: url('../../../fonts/HelveticaLTStd-Roman.otf');
+}
+
+@font-face {
+  font-family: 'HelveticaNeueLTStd-BdEx';
+  src: url('../../../fonts/HelveticaNeueLTStd-BdEx.otf');
+}
+
+
+//Mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin custom-border-radius($top, $right, $bottom, $left) {
+  -webkit-border-radius: $top $right $bottom $left;
+  border-radius: $top $right $bottom $left;
+}
+
+@mixin button-styles {
+  @include border-radius(5px);
+  border: 1px solid $button-border-color;
+  background: #fff;
+  padding: 8px 25px;
+  color: $button-border-color;
+  &[disabled] {
+    opacity: 0.5;
+  }
+}
+
+//clear fix
+.floatfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+.floatfix {
+  display: inline-block;
+}

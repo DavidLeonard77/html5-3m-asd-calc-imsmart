@@ -1,0 +1,43 @@
+<ion-view view-title="{{config.appViewTitle}}" cache-view="false"
+          class="result common-container">
+  <ion-scroll style="height: 580px;">
+    <div class="view-content-wrapper" style="height: 768px;">
+      <div class="title-container">{{calc.calculatorName}}</div>
+      <div class="results-container floatfix">
+        <h3>{{calc.resultsPerformTitle}}</h3>
+
+        <cn-chart chart-data="chartData1"></cn-chart>
+
+        <cn-chart chart-data="chartData2"></cn-chart>
+
+      </div>
+      <div class="results-container floatfix">
+        <h3>{{calc.resultsSavingsTitle}}</h3>
+        <ion-scroll>
+
+          <div class="chart-wrapper">
+            <p>{{tableData.title}}</p>
+            <table>
+              <tr>
+                <th></th>
+                <th>{{config.currency}}</th>
+                <th>%</th>
+              </tr>
+              <tr ng-repeat="row in tableData.rows">
+                <td>{{row.label}}</td>
+                <td>{{row.value | currency : config.currency : 2}}</td>
+                <td>{{row.percent | number : 0}}%</td>
+              </tr>
+            </table>
+          </div>
+
+          <cn-chart chart-data="chartData3"></cn-chart>
+
+        </ion-scroll>
+      </div>
+    </div>
+  </ion-scroll>
+  <div class="bar bar-footer">
+    <button type="button" ng-click="navigation.goBack()">{{calc.resultsBackButtonText}}</button>
+  </div>
+</ion-view>

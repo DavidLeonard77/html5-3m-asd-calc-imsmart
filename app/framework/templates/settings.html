@@ -1,0 +1,77 @@
+<ion-view title="Account Settings">
+  <ion-header-bar align-title="center">
+    <h1>Settings</h1>
+    <button class="button"
+            ng-click="savePersonalDetails(settingsPopup, settingsForm)">Done
+    </button>
+  </ion-header-bar>
+  <ion-pane>
+    <form name="settingsForm">
+      <ul class="list">
+        <li class="item item-input">
+          <div class="row">
+            <div class="col floatfix">
+              <span class="input-label">Name</span>
+              <input data-tap-disabled="true" type="text" placeholder="First and Last Name"
+                     ng-keypress="keyPress($event)"
+                     ng-model="settings.userName">
+            </div>
+          </div>
+        </li>
+        <li class="item item-input">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col floatfix">
+                  <span class="input-label">Phone</span>
+                  <input data-tap-disabled="true" name="phoneNo" type="tel" placeholder="(xxx) xxx-xxx"
+                         ng-keypress="keyPress($event)"
+                         ng-model="settings.phone" ng-pattern="/^$|^[0-9-. ]+$/">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="error" ng-class="settingsForm.phoneNo.$error.pattern ? 'show' : 'hide'">
+                    Valid phone number must be provided.
+                  </div>
+                </div>
+              </div>              
+            </div>              
+          </div>
+        </li>
+        <li class="item item-input">
+          <div class="row">
+            <div class="col">
+              <div class="row">
+                <div class="col floatfix">
+                  <span class="input-label">Email</span>
+                  <input data-tap-disabled="true" name="accountEmail" type="email"
+                         placeholder="example@mail.com"
+                         ng-keypress="keyPress($event)"
+                         ng-model="settings.email"
+                         ng-pattern="/^$|^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+[.]+[a-zA-Z0-9-.]+$/">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col">
+                  <div class="error" ng-class="settingsForm.accountEmail.$error.email || settingsForm.accountEmail.$error.pattern ? 'show' : 'hide'">
+                    Valid email must be provided.
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </li>
+      </ul>
+      <!-- <div class="row">
+        <div class="col">
+                          <button class="button button-save"
+                                  ng-click="savePersonalDetails(settingsPopup)"
+                                  ng-disabled="settingsForm.$invalid">
+                              Save
+                          </button>
+        </div>
+      </div> -->
+    </form>
+  </ion-pane>
+</ion-view>
